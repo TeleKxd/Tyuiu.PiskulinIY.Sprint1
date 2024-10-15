@@ -38,10 +38,7 @@ namespace Tyuiu.PiskulinIY.Sprint1.Task5.V1
             Console.WriteLine("* РЕЗУЛЬТАТ                                                               *");
             Console.WriteLine("***************************************************************************");
 
-            int res = Convert.ToInt32(ds.DistanceBetweenDots(x1,x2,y1,y2));
-            Console.WriteLine(res);
-
-
+            Console.WriteLine(ds.DistanceBetweenDots(x1, y1, x2, y2));
             Console.ReadKey();
 
 
