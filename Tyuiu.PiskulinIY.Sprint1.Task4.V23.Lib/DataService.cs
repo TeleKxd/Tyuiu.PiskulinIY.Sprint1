@@ -9,7 +9,7 @@ namespace Tyuiu.PiskulinIY.Sprint1.Task4.V23.Lib
             var res = Math.Sqrt(Math.Abs(x+y))/Math.Abs(3-x);
 
 
-            return res;
+            return Math.Round(res, 3);
         }
     }
 }
