@@ -5,8 +5,16 @@ namespace Tyuiu.PiskulinIY.Sprint1.Task6.V3.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidExpression()
         {
+            DataService ds = new DataService();
+
+            string words = "Что где когда";
+            string res = ds.LastLetterWord(words);
+            Assert.AreEqual("оеа", res);
+
+
+
         }
     }
 }
