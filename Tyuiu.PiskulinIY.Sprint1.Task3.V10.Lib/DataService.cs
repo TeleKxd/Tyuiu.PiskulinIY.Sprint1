@@ -6,9 +6,8 @@ namespace Tyuiu.PiskulinIY.Sprint1.Task3.V10.Lib
         public double NumberToMoney(double number)
         {
             return Convert.ToDouble(Math.Truncate(number).ToString() + "," + (number * 100 % 100).ToString());
-
-
         }
     }
 }
+
 
