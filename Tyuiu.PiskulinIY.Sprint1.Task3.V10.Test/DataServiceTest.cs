@@ -8,21 +8,10 @@ namespace Tyuiu.PiskulinIY.Sprint1.Task3.V10.Test
         [TestMethod]
         public void ValidExpression()
         {
-            DataService ds3 = new DataService();
-            double number = 23.6;
-            double rub = 23;
-            var res = ds3.NumberToMoney(number);
-            Assert.AreEqual(rub, res);
-        }
-
-        [TestMethod]
-        public void ValidExpression1()
-        {
-            DataService1 ds33 = new DataService1();
-            double number = 23.6;
-            double kop = 60;
-            var res = ds33.NumberToMoney(number);
-            Assert.AreEqual(kop, res);
+            DataService ds = new DataService();
+            double x = 23.6;
+            var res = ds.NumberToMoney(x);
+            Assert.AreEqual(23.60, res);
         }
     }
 }

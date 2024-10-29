@@ -6,8 +6,8 @@ namespace Tyuiu.PiskulinIY.Sprint1.Task3.V10
     {
         static void Main(string[] args)
         {
-            DataService ds3 = new DataService();
-            DataService1 ds33 = new DataService1();
+            DataService ds = new DataService();
+            
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
@@ -25,17 +25,9 @@ namespace Tyuiu.PiskulinIY.Sprint1.Task3.V10
             Console.WriteLine("***************************************************************************");
 
             double number;
-
-            Console.WriteLine("Введите дробное число: ");
+            Console.Write("Введите дробное число -> ");
             number = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ                                                               *");
-            Console.WriteLine("***************************************************************************");
-
-
-            Console.WriteLine(+number + " руб. - это " + ds3.NumberToMoney(number) + " руб. " + ds33.NumberToMoney(number) + " коп. ");
-
+            Console.WriteLine($"{number} руб. - это {Math.Truncate(number)} руб. {(number * 100 % 100)} коп. "); Console.WriteLine(ds.NumberToMoney(number));
             Console.ReadKey();
         }
     }
